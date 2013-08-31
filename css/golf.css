@@ -406,6 +406,9 @@ div.lessontime table td{
  padding-top    :8px;
 }
 
+div.map iframe{
+ float         :left;
+}
 /*
 div.kaisuken span.kingaku{
  font-size      :24px;
