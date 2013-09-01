@@ -409,6 +409,20 @@ div.lessontime table td{
 div.map iframe{
  float         :left;
 }
+
+div#main dl{
+ width         :60%;
+ margin-left   :20px;
+}
+
+div#main dt{
+ margin-top   :20px;
+}
+
+div#main dd{
+ margin-left   :20px;
+ font-size     :14px;
+}
 /*
 div.kaisuken span.kingaku{
  font-size      :24px;
@@ -435,6 +449,22 @@ div.ryoukin ul li span.yen{
 */
 /* ============  div#footer内     開始   =================== */
 div#footer p{
- font-size:12px;
+ font-size      :12px;
+}
+
+div#footer ul li{
+ float          :left;
+ margin         :10px;
+}
+
+div#footer ul li,
+div#footer ul li a {
+ display        :block;
+ font-size      :12px;
+ text-decoration:none;
+}
+
+div#footer ul li a img{
+ width          :100px;
 }
 /* ============  div#footer内     終了   =================== */
