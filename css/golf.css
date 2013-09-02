@@ -143,7 +143,7 @@ div#header{
 
 div#leftside{
  float          :left;
- width          :00%;
+ width          :0;
  /*border-left    :1px solid #000000;*/
  /*border-top     :1px solid #000000;*/
  /*border-right   :1px solid #000000;*/
@@ -158,6 +158,8 @@ div#main{
  border-top     :1px solid #A9A9A9;
  border-right   :1px solid #A9A9A9;
  border-bottom  :1px solid #A9A9A9;
+ background-image:url(../img/newback.png);
+ background-repeat:no-repeat;
 }
 
 div#footer{
@@ -216,8 +218,9 @@ div#header dl dt{
 div#header dl dd{
 }
 
-div#header img.titleimg{
- width          :100%;
+img.titleimg{
+ width          :70%;
+ margin         :20px;
 }
 div.navi{
  float          :left;
@@ -312,6 +315,9 @@ div#main div.news p.newsmain{
  border-bottom  :1px solid #000000;
 }
 
+div.eigyojikan{
+ background-color:#FFFFFF;
+}
 
 div.eigyojikan table,
 div.weekday    table{
