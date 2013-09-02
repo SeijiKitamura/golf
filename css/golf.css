@@ -32,6 +32,7 @@ element{
 }
 */
 
+/* ============  CSSリセット 開始      =================== */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -82,6 +83,7 @@ q:before, q:after {
    	border-collapse: collapse;
 	border-spacing: 0;
    }
+/* ============  CSSリセット 終了      =================== */
 
 /* ============  共通事項    開始      =================== */
 br.clr{
@@ -92,36 +94,13 @@ div.clr{
  clear          :both;
 }
 
-th,td{
-/*
- width:10%;
- border-left    :1px solid #A5A5A5;
- border-top     :1px solid #A5A5A5;
- border-bottom  :1px solid #A5A5A5;
- border-right   :1px solid #A5A5A5;
-*/
-}
-td{
- /*height         :5em;*/
-}
-div.colend{
- border-right   :1px solid #A5A5A5;
-}
-
-div.rowend{
- border-bottom  :1px solid #A5A5A5;
-}
-
 h2{
- font-size       :18px;
+ font-size       :1.2em;
  color           :#FFFFFF;
  background-image:url(../img/backimg.jpg);
- width           :80%;
- padding-left    :5px;
- padding-top     :5px;
- padding-bottom  :1px;
- margin-top      :5px;
- margin-bottom   :5px;
+ padding-left    :1%;
+ padding-top     :1%;
+ padding-bottom  :1%;
 }
 
 /* ============  共通事項    終了      =================== */
@@ -135,19 +114,12 @@ div#wrapper{
 
 div#header{
  width          :100%;
- /*border-left    :1px solid #000000;*/
- /*border-top     :1px solid #000000;*/
- /*border-right   :1px solid #000000;*/
- border-bottom  :1px solid #A9A9A9;
 }
 
 div#leftside{
  float          :left;
- width          :00%;
- /*border-left    :1px solid #000000;*/
- /*border-top     :1px solid #000000;*/
- /*border-right   :1px solid #000000;*/
- /*border-bottom  :1px solid #000000;*/
+ width          :0;
+ height         :0;
 }
 
 div#main{
@@ -163,22 +135,32 @@ div#main{
 div#footer{
  width          :100%;
  border-top     :1px solid #A9A9A9;
- /*border-left    :1px solid #000000;*/
- /*border-right   :1px solid #000000;*/
- /*border-bottom  :1px solid #000000;*/
 }
 /* ============  大枠        終了      =================== */
 
 
 /* ============  div#header内   開始   =================== */
 div#header h1{
- font-size      :8px;
+ font-size      :0.8em;
  font-weight    :normal;
+ margin-top     :0.6%;
+ width          :30%;
+}
+
+div.corpaddress {
+ width          :30%;
+ float          :right;
+}
+
+div.corpaddress dl {
+}
+div.corpaddress dl dt{
+ float          :left;
 }
 
 div#header div.logo{
  float          :left;
- width          :80px;
+ width          :10%;
  margin-left    :1%;
  margin-top     :1%;
  margin-bottom  :1%;
@@ -191,63 +173,47 @@ div#header div.logo img.logomark{
 }
 
 div#header div.corpname{
+ width          :80%;
  float          :left;
- width          :25%;
- margin-top     :60px;
+ margin-top     :4%;
 }
 
 div#header div.corpname h1{
- font-size      :28px;
+ font-size      :1.8em;
  color          :#2E8B57;               /*文字色*/
 
 }
 
-div#header dl{
- float          :right;
- width          :40%;
- font-size      :16px;
-}
 
-div#header dl dt{
- float          :left;
- width          :20%;
-}
-
-div#header dl dd{
-}
 
 div#header img.titleimg{
  width          :100%;
 }
+
 div.navi{
  float          :left;
  width          :100%;
- margin-top     :1%;
- margin-left    :3%;
  margin-bottom  :1%;
- background-image:url(../img/backimg.jpg);
- background-repeat:repeat;
-
 }
 
 div.navi ul li{
- font-size      :14px;
  color          :#FFFFFF;
  float          :left;
  width          :15%;
- height         :2.5em;
+ height         :2em;
  border-top     :1px solid #A9A9A9;
  border-right   :1px solid #A9A9A9;
  border-bottom  :1px solid #A9A9A9;
- padding-top    :15px;
+ padding-top    :1.5%;
  text-align     :center;
+ background-image:url(../img/backimg.jpg);
+ background-repeat:repeat;
 }
 
 div.navi ul li a{
- height         :3em;
- width           :100%;
- font-size      :14px;
  display        :block;
+ height         :100%;
+ width           :100%;
  text-decoration:none;
  color          :#FFFFFF;
  /*border-left    :1px solid #A9A9A9;*/
@@ -255,114 +221,187 @@ div.navi ul li a{
  /*border-bottom  :1px solid #A9A9A9;*/
 
 }
-div.mininavi{
- float         :right;
- margin-top    :40px;
-}
-
-div.mininavi ul li{
- float         :left;
- width         :140px;
-}
-
 /* ============  div#header内   終了   =================== */
 
 /* ============  div#leftside内   開始   =================== */
 /* ============  div#leftside内   終了   =================== */
 
 /* ============  div#main内       開始   =================== */
-div#main div.news{
- margin-left    :2%;
- margin-top     :2%;
- margin-right   :2%;
- margin-bottom  :2%;
-
- padding-left   :1%;
- padding-top    :1%;
- padding-right  :1%;
- padding-bottom :1%;
-
-
- /*
- border-left    :1px solid #000000;
- border-top     :1px solid #000000;
- border-right   :1px solid #000000;
- border-bottom  :1px solid #000000;
- */
-}
-
-div#main div.news h2.newstitle a{
- display        :block;
+div.titlediv{
  width          :100%;
- text-decoration:none;
+ height         :200px;
+ margin-bottom  :3%;
+ background-image:url("../img/newback.png");
+ background-repeat:no-repeat;
 }
 
-div#main div.news img{
- float          :left;
- width          :30%;
+div.titlediv img{
+ width          :100%;
 }
 
-div#main div.news p.newsmain{
- float          :left;
- width          :60%;
- margin-left    :2%;
+/* ============  goannai.html main 開始   =================== */
+div.eigyojikan p{
+ margin         :1%;
+}
+
+div.eigyojikan table{
+ border-bottom  :1px solid #000000;
+ margin         :1%;
+ width          :90%;
+}
+
+div.eigyojikan table th{
+ padding-top    :1%;
+ height         :1.5em;
+ font-size      :0.8em;
  border-left    :1px solid #000000;
  border-top     :1px solid #000000;
  border-right   :1px solid #000000;
- border-bottom  :1px solid #000000;
 }
 
-
-div.eigyojikan table,
-div.weekday    table{
- border-bottom  :1px solid #000000;
-}
-div.eigyojikan table th,
-div.weekday    table th{
- padding-top    :5px;
+div.eigyojikan table td{
+ padding-top    :1%;
+ font-size      :1em;
  height         :1.5em;
- font-size      :12px;
- border-left    :1px solid #000000;
- border-top     :1px solid #000000;
- border-right   :1px solid #000000;
-
-}
-div.eigyojikan table td,
-div.weekday    table td{
- padding-top    :5px;
- font-size      :18px;
- height         :1.5em;
- width          :120px;
+ width          :23%;
  text-align     :center;
  border-left    :1px solid #000000;
  border-top     :1px solid #000000;
  border-right   :1px solid #000000;
- /*height         :2.5em;*/
 }
 
-div.weekday table{
+div.eigyojikan ul{
+ margin         :1%;
+}
+
+div.ryoukin p{
+ margin         :1%;
+}
+
+div.ryoukin img{
+ width          :20%;
+ margin         :0.5% 1%;
+}
+
+div.kaisuken p{
+ margin         :1%;
+}
+
+div.kaisuken img{
+ width          :20%;
+ margin         :0.5% 1%;
+}
+
+div.weekday p{
+ margin         :1%;
+}
+
+div.weekday img{
+ width          :100%;
+}
+div.kaiin,
+div.ballcharge,
+div.servicetime{
+ width          :28%;
  float          :left;
+ border         :1px solid #A5A5A5;
+ margin         :1%;
+ padding        :1%;
 }
 
-div.weekdaydiv img,
-div.grouplesson img{
- float          :left;
+div.kaiin p,
+div.ballcharge p,
+div.servicetime p{
+ font-size      :0.9em;
 }
 
+div.kaiin table{
+ border-bottom  :1px solid #000000;
+ margin         :1% 0;
+}
+
+div.kaiin table th{
+ padding-top    :1%;
+ height         :1.2em;
+ font-size      :0.8em;
+ border-left    :1px solid #000000;
+ border-top     :1px solid #000000;
+ border-right   :1px solid #000000;
+}
+
+div.kaiin table td{
+ padding-top    :1%;
+ font-size      :1em;
+ height         :1.2em;
+ width          :40%;
+ text-align     :center;
+ border-left    :1px solid #000000;
+ border-top     :1px solid #000000;
+ border-right   :1px solid #000000;
+}
+
+div.kaiin table td span{
+ font-size      :0.8em;
+}
+
+div.ballcharge img{
+ width         :80%;
+ margin        :1%;
+}
+
+div.servicetime table{
+ border-bottom  :1px solid #000000;
+ margin         :10px 0;
+}
+
+div.servicetime table th{
+ padding-top    :5px;
+ height         :1.2em;
+ font-size      :12px;
+ border-left    :1px solid #000000;
+ border-top     :1px solid #000000;
+ border-right   :1px solid #000000;
+}
+
+div.servicetime table td{
+ padding-top    :5px;
+ font-size      :14px;
+ height         :1.2em;
+ width          :40%;
+ text-align     :center;
+ border-left    :1px solid #000000;
+ border-top     :1px solid #000000;
+ border-right   :1px solid #000000;
+}
+/* ============  goannai.html main 終了   =================== */
+
+/* ============  grouplesson.html main 開始   =================== */
 
 div.grouplesson p{
- width          :800px;
+ margin         :1%;
+}
+
+div.grouplesson img{
+ float          :left;
+ margin         :1%;
+}
+
+
+div.teachers p{
+ margin         :1%;
 }
 
 div.teacher{
  float          :left;
- width          :200px;
- margin         :10px;
- padding        :10px;
+ width          :18%;
+ margin         :1%;
+ height         :280px;
+ padding        :1%;
  border-left    :1px solid #A5A5A5;
  border-top     :1px solid #A5A5A5;
  border-right   :1px solid #A5A5A5;
  border-bottom  :1px solid #A5A5A5;
+ overflow       :hidden;
 }
 
 div.teacher img{
@@ -370,42 +409,83 @@ div.teacher img{
 
 }
 
-div.teacher p span{
+div.teacher p span.tname{
  display        :block;
+ font-size      :1.6em;
+ margin         :1%;
 }
 
-div.teacher p span.tname{
- font-size      :22px;
- margin         :10px;
+div.teacher p span.tname span.furigana{
+ font-size      :0.6em
 }
 
 div.teacher p span.syozoku{
- font-size      :12px;
- margin         :10px;
+ display        :block;
+ font-size      :0.8em;
+ margin         :2%;
 }
 
-div.lessonryoukin table,
+div.teacher p span.comment{
+ display        :block;
+ font-size      :0.8em;
+ margin         :2%;
+}
+
+div.lessontime p{
+ margin         :1%;
+}
+
 div.lessontime table{
+ width          :90%;
+ margin         :1%;
+ border-right   :1px solid #A5A5A5;
+ border-bottom  :1px solid #A5A5A5;
+}
+
+div.lessontime table th,
+div.lessontime table td{
+ width          :8%;
+ padding-top    :2%;
+ height         :2.2em;
+ border-left    :1px solid #A5A5A5;
+ border-top     :1px solid #A5A5A5;
+ text-align     :center;
+}
+
+div.lessonryoukin p{
+ margin         :1%;
+}
+div.lessonryoukin table{
+ width          :40%;
+ margin         :1%;
  border-right   :1px solid #A5A5A5;
  border-bottom  :1px solid #A5A5A5;
 }
 
 div.lessonryoukin table th,
-div.lessonryoukin table td,
-div.lessontime table th,
-div.lessontime table td{
+div.lessonryoukin table td{
+ width          :2%;
+ padding-top    :2%;
+ height         :2.2em;
  border-left    :1px solid #A5A5A5;
  border-top     :1px solid #A5A5A5;
+ text-align     :center;
 }
 
+div.roundlesson p{
+ margin         :1%;
+}
+
+
+/*
 div.lessonryoukin table td,
 div.lessontime table td{
- width          :100px;
+ width          :30%;
  height         :2em;
  text-align     :center;
  padding-top    :8px;
 }
-
+*/
 div.map iframe{
  float         :left;
 }
@@ -480,23 +560,15 @@ div.ryoukin ul li span.yen{
 }
 */
 /* ============  div#footer内     開始   =================== */
-div#footer p{
- font-size      :12px;
-}
-
 div#footer ul li{
  float          :left;
- margin         :10px;
+ margin         :1%;
+ font-size      :0.8em;
 }
 
-div#footer ul li,
 div#footer ul li a {
  display        :block;
- font-size      :12px;
  text-decoration:none;
 }
 
-div#footer ul li a img{
- width          :100px;
-}
 /* ============  div#footer内     終了   =================== */
