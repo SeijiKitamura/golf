@@ -417,11 +417,43 @@ div#main dl{
 
 div#main dt{
  margin-top   :20px;
+ margin-bottom:15px;
+ border-bottom:1px solid #A5A5A5;
+
 }
 
 div#main dd{
  margin-left   :20px;
  font-size     :14px;
+}
+
+div.link ul li {
+ height        :60px;
+}
+
+div.link ul li img{
+ width         :180px;
+ margin-right  :20px;
+}
+
+div.link ul li a{
+ color         :#000000;
+ text-decoration:none;
+}
+
+div.link a{
+ display       :block;
+ width         :200px;
+ height        :80px;
+ margin        :10px;
+ float         :left;
+ color         :#000000;
+ text-align    :center;
+ text-decoration:none;
+}
+
+div.link a img{
+ width         :100%;
 }
 /*
 div.kaisuken span.kingaku{
