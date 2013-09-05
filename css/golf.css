@@ -161,6 +161,11 @@ div#header h1{
  width          :50%;
 }
 
+div#header h2{
+ background-image:none;
+ color           :#2E8B57;
+}
+
 div.corpaddress {
  width          :30%;
  float          :right;
@@ -538,10 +543,17 @@ div.roundlesson p{
 
 
 /* ============  map.html main 開始   =================== */
-div.map iframe{
- float         :left;
+div.map img{
+ width          :60%;
+ float          :left;
+ margin         :2%;
 }
 
+div.mapcomment{
+ width          :30%;
+ float          :left;
+ padding        :2%;
+}
 /* ============  map.html main 終了   =================== */
 
 
