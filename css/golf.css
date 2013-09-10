@@ -251,7 +251,7 @@ div.titlediv{
  width          :100%;
  height         :200px;
  margin-bottom  :3%;
- background-image:url("../img/newback.png");
+ /*background-image:url("../img/newback.png");*/
  background-repeat:no-repeat;
 }
 
@@ -305,16 +305,25 @@ div.sale a span.comment{
 /* ============  index.html main 開始   =================== */
 
 /* ============  goannai.html main 開始   =================== */
+div.goannaititle{
+ width          :100%;
+ height         :200px;
+ margin-bottom  :3%;
+ background-image:url("../img/eigyouzikannew.png");
+ background-repeat:no-repeat;
+}
 div.eigyojikan p{
  margin         :1%;
 }
 
+div.event table,
 div.eigyojikan table{
  border-bottom  :1px solid #000000;
  margin         :1%;
  width          :90%;
 }
 
+div.event table th,
 div.eigyojikan table th{
  padding-top    :1%;
  height         :1.5em;
@@ -324,6 +333,7 @@ div.eigyojikan table th{
  border-right   :1px solid #000000;
 }
 
+div.event table td,
 div.eigyojikan table td{
  padding-top    :1%;
  font-size      :1em;
@@ -441,7 +451,13 @@ div.servicetime table td{
 /* ============  goannai.html main 終了   =================== */
 
 /* ============  grouplesson.html main 開始   =================== */
-
+div.grouptitle{
+ width          :100%;
+ height         :200px;
+ margin-bottom  :3%;
+ background-image:url("../img/grouplesseon.png");
+ background-repeat:no-repeat;
+}
 div.grouplesson p{
  margin         :1%;
 }
@@ -543,6 +559,14 @@ div.roundlesson p{
 
 
 /* ============  map.html main 開始   =================== */
+div.maptitle{
+ width          :100%;
+ height         :200px;
+ margin-bottom  :3%;
+ background-image:url("../img/accessmap.png");
+ background-repeat:no-repeat;
+
+}
 div.map img{
  width          :60%;
  float          :left;
@@ -556,6 +580,15 @@ div.mapcomment{
 }
 /* ============  map.html main 終了   =================== */
 
+/* ============  situmon.html main 開始   =================== */
+div.situmontitle{
+ width          :100%;
+ height         :200px;
+ margin-bottom  :3%;
+ background-image:url("../img/yokuarusitumon.png");
+ background-repeat:no-repeat;
+}
+/* ============  situmon.html main 終了   =================== */
 
 /* ============  policy.html main 開始   =================== */
 div#main dl{
@@ -608,3 +641,12 @@ div#footer ul li a {
 }
 
 /* ============  div#footer内     終了   =================== */
+
+
+/* ============  div.event内      開始   =================== */
+div.event{
+	width         :80%;
+}
+
+
+/* ============  div.event内      終了   =================== */
