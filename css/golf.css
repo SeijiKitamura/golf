@@ -259,6 +259,14 @@ div.titlediv img{
  width          :100%;
 }
 
+div.sosial {
+	margin-top    :30px;
+	float         :right;
+}
+div.sosial img{
+	width         :40px;
+	height        :40px;
+}
 
 /* ============  index.html main 開始   =================== */
 div.welcomediv {
@@ -650,3 +658,14 @@ div.event{
 
 
 /* ============  div.event内      終了   =================== */
+
+/* ============  div.201310eventdiv内 開始   =================== */
+div.event201310{
+ width          :100%;
+ height         :450px;
+ margin-bottom  :3%;
+ background-image:url("../img/aki.png");
+ background-repeat:no-repeat;
+
+}
+/* ============  div.201310eventdiv内 終了   =================== */
