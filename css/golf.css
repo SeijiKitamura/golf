@@ -656,7 +656,28 @@ div.event{
 	width         :80%;
 }
 
+div.event p.eventp{
+	font-size     :24px;
+	padding       :20px;
+}
 
+div.event ul.eventul{
+	margin        :20px;
+}
+
+div.event ul.eventul li{
+	font-size     :18px;
+}
+
+div.event ul.eventul li span.li1{
+	display       :block;
+	width         :80px;
+	float         :left;
+}
+
+div.event ul.eventul li span.li2{
+	clear         :both;
+}
 /* ============  div.event内      終了   =================== */
 
 /* ============  div.201310eventdiv内 開始   =================== */
