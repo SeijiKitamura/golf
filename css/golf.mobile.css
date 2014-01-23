@@ -186,6 +186,14 @@ div#header div.corpname h2{
  padding-top     :12%;
 }
 
+div#header div.sosial {
+	float          :right;
+}
+
+div#header div.sosial a img{
+ width           :40px;
+ height          :40px;
+}
 
 div.navi{
  display        :none;
