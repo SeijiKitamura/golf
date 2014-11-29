@@ -1,178 +1,282 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html lang="ja">
- <head>
-  <meta name="ROBOTS" content="index">
-  <meta name="ROBOTS" content="follow">
-  <meta http-equiv="Content-language" content="ja">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="Content-Script-Type" content="text/javascript">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <meta http-equiv="pragma" content="no-cache">
-  <meta http-equiv="cache-control" content="no-cache">
-  <meta http-equiv="expires" content="">
-  <meta name="description" content="ゆたかゴルフは大田区にあるゴルフ練習場です。9:00から22:00(平日）まで営業中。営業時間・駐車場・グループレッスン、コースレッスンのご案内です。打席数16">
+     <head>
+       <meta charset="utf-8">
+       <title>ホーム|ゆたかゴルフ</title>
+       <meta name="description" content="ゆたかゴルフは大田区にあるゴルフ練習場です。9:00から22:00(平日）まで営業中。営業時間・駐車場・グループレッスン、コースレッスンのご案内です。打席数16">
+       <meta name="ROBOTS" content="index">
+       <meta name="ROBOTS" content="follow">
+       <meta http-equiv="pragma" content="no-cache">
+       <meta http-equiv="cache-control" content="no-cache">
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+       <link rel="icon" href="images/favicon.ico">
+       <link rel="shortcut icon" href="images/favicon.ico" />
+       <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="css/slider.css">
+       <link rel="stylesheet" href="css/zerogrid.css" type="text/css" media="screen">
+       <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+       <script src="js/jquery.js"></script>
+       <script src="js/jquery-migrate-1.1.1.js"></script>
+       <script src="js/superfish.js"></script>
+       <script src="js/jquery.easing.1.3.js"></script>
+       <script src="js/sForm.js"></script>
+       <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+       <script src="js/tms-0.4.1.js"></script>
+       <script src="js/css3-mediaqueries.js"></script>
+       <script>
+      $(window).load(function(){
+      $('.slider')._TMS({
+              show:0,
+              pauseOnHover:false,
+              prevBu:'.prev',
+              nextBu:'.next',
+              playBu:false,
+              duration:800,
+              preset:'fade',
+              pagination:true,//'.pagination',true,'<ul></ul>'
+              pagNums:false,
+              slideshow:8000,
+              numStatus:false,
+              banners:false,
+          waitBannerAnimation:false,
+        progressBar:false
+      })
+      });
 
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2,user-scalable=yes">
-  <meta name="format-detection" content="telephone=no">
-  <link rel="icon" href="" type="type/ico" sizes="16x16" /> 
+     $(window).load (
+    function(){$('.carousel1').carouFredSel({auto: false,prev: '.prev',next: '.next', width: 960, items: {
+      visible : {min: 1,
+       max: 4
+},
+height: 'auto',
+ width: 240,
 
-  <meta name="viewport" content="width=device-width">
-  <link media="only screen and (max-device-width:480px)" href="./css/golf.mobile.css" type="text/css" rel="stylesheet" />
-  <link media="screen and (min-device-width:481px)" href="./css/golf.css" type="text/css" rel="stylesheet" />
-  <!--[if IE]>
-  <link href="./css/golf.css" rel="stylesheet" type="text/css" />
-  <![endif]-->
+    }, responsive: false,
 
-  <link rel="next" href="goannai.html" />
-  <link rel="prev" href=""/> 
-  
-  <title> ゆたかゴルフ | ホーム </title>
-  
-  <script type="text/javascript" src="js/jquery.js"></script>
+    scroll: 1,
 
- </head>
+    mousewheel: false,
 
- <body>
-<!-- ======================= wrapper start ================= -->
-  <div id="wrapper">
-<!-- ======================= header  start ================= -->
-   <div id="header">
-    <h1>ゆたかゴルフ練習場　東京都大田区南馬込 16打席、30台駐車場有り</h1>
+    swipe: {onMouse: false, onTouch: false}});
 
-    <div class="corpaddress">
-     <dl>
-      <dt>住所</dt><dd>: 東京都大田区南馬込6-21-3 2階</dd>
-      <dt>TEL</dt><dd>: 03-3772-2272</dd>
-     </dl>
+
+    });
+
+     </script>
+
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-40148125-1', 'kita-grp.co.jp'); ga('send', 'pageview');
+    </script>
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie.css">
+
+    <![endif]-->
+     </head>
+     <body>
+       <div class="main">
+<!--==============================header=================================-->
+ <header>
+  <div class="zerogrid">
+    <div class="col-full">
+	<div class="wrap-col">
+    <h1><a href="index.html"><img src="images/logo.JPG" alt="ゆたかゴルフ　ロゴマーク">ゆたかゴルフ</a> </h1>
+
+         <div class="menu_block">
+           <nav>
+            <ul class="sf-menu">
+              <li class="current"><a href="index.html">ホーム</a></li>
+              <li><a href="goannai.html">営業時間・料金</a></li>
+              <li><a href="grouplesson.html">レッスン</a></li>
+              <li><a href="map.html">アクセスマップ</a></li>
+              <li><a href="situmon.html">よくある質問</a></li>
+              <li><a href="news.html">ニュース</a></li>
+            </ul>
+           </nav>
+           <div class="clear"></div>
+           </div>
+           <div class="clear"></div>
+		</div>
+      </div>
     </div>
+</header>
+ <div class="slider-relative">
+    <div class="slider-block">
+      <div class="slider">
+        <ul class="items">
+          <li><img src="images/topimg.png" alt=""></li>
+          <li><img src="images/golftopimage.png" alt=""></li>
+          <li class="mb0"><img src="images/201411event.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
+ </div>
+<!--=======content================================-->
 
-<!-- ======================= logo    start ================= -->
-    <a href="index.html">
-     <div class="logo">
-      <img class="logomark" src="img/logo.JPG" alt="ゆたかゴルフ ロゴマーク">
-     </div>
-     <div class="corpname">
-      <h2>ゆたかゴルフ</h2>
-     </div>
-    </a>
+<div class="content page1">
+  <div class="zerogrid">
+      <div class="row">
+      <div class="col-3-5">
+	  	<div class="wrap-col">
+	        <h2>Welcome</h2>
+	        <div class="page1_block col1">
+				<div class="col-1-3"><img src="images/welcomeimg.jpg" alt=""></div>
+				<div class="col-2-3">
+		          <div class="extra_wrapper">
+		            <p><span class="col2">
+                 ようこそ！ゆたかゴルフホームページへ。当クラブは大田区南馬込の桜並木にあるゴルフ練習場です。
+                </p>
+<!--		            <a href="#" class="btn">more</a> -->
+		          </div>
+			  </div>
+	          <div class="clear"></div>
+	        </div>
+		</div>
+      </div>
+      <div class="col-2-5">
+	  	<div class="wrap-col">
+	        <h2>News</h2>
+	        <ul class="list">
+           <li><a href="201411event.html">【14年11月】ウィークデー倶楽部追加日決定！</a></li>
+           <li><a href="201410event.html">【14年10月】ウィークデー倶楽部追加日決定！</a></li>
+           <li><a href="201409event.html">【14年9月】ウィークデー倶楽部追加日決定！</a></li>
+           <li><a href="201406event.html">【14年6月】ウィークデー倶楽部全日ご利用可能！</a></li>
+	        </ul>
+		</div>
+      </div>
+      </div>
+      <div class="col-full">
+        <div class="hor_separator"></div>
+      </div>
+	  <div class="row">
+      <div class="col-full">
+	  	<div class="wrap-col">
+        <div class="car_wrap">
+        <h2>Service</h2>
+        <a href="#" class="prev"></a><a href="#" class="next"></a>
+        <ul class="carousel1">
+          <li>
+           <div>
+            <a href="goannai.html">
+             <img src="images/cimg0003.jpg" alt="">
+            </a>
+            <div class="col1 upp">
+             <a href="goannai.html">営業時間</a>
+            </div>
+            <span>9:00-22:00(受付終了21:30）です。第1木曜日全休。詳しくは
+             <a href="#">こちら</a>をご覧ください。
+            </span>
+           </div>
+          </li>
 
-		<div class="sosial">
-			<a href="https://twitter.com/yutakagolf" target="_blank"><img src="img/twitter.jpg"></a>
+          <li>
+           <div>
+            <a href="map.html">
+             <img src="images/map.gif" alt="">
+            </a>
+            <div class="col1 upp">
+             <a href="map.html">アクセスマップ</a>
+            </div>
+            <span>都営地下鉄浅草線西馬込駅から徒歩15分。</span>
+           </div>
+          </li>
+
+          <li>
+           <div>
+            <a href="goannai.html#weekday">
+             <img src="images/photo.jpg" alt="">
+            </a>
+            <div class="col1 upp">
+             <a href="goannai.html#weekday">ウィークデー倶楽部</a>
+            </div>
+            <span>1080円で200球打てる会員限定のおすすめサービスです。 </span>
+           </div>
+          </li>
+
+          <li>
+           <div>
+            <img src="images/carpark2.jpg" alt="">
+            <div class="col1 upp">
+             <a href="#">駐車場40台完備！</a>
+            </div>
+            <span>お車でもご来店可能です。</span>
+           </div>
+          </li>
+
+          <li>
+           <div>
+            <a href="grouplesson.html">
+             <img src="images/cimg0028.jpg" alt="">
+            </a>
+            <div class="col1 upp">
+             <a href="grouplesson.html">グループレッスン</a>
+            </div>
+            <span>グループレッスンでは、お客様のレベルに合わせたレッスンを行なっています。 もちろん、初めての方でも分かりやすく丁寧にご指導いたしますよ。 グループレッスンをご希望の方は、お気軽にカウンターまでお申し出ください。</span>
+           </div>
+          </li>
+        </ul>
+      </div>
 	  </div>
-
-    <div class="clr"></div>
-<!-- ======================= logo    end   ================= -->
-
-<!-- ======================= navi    start ================= -->
-    <div class="navi">
-     <ul>
-      <li>ホーム</li>
-      <li><a href="goannai.html">営業時間/料金</a></li>
-      <li><a href="grouplesson.html">グループレッスン</a></li>
-      <li><a href="map.html">アクセスマップ</a></li>
-      <li><a href="situmon.html">よくある質問</a></li>
-      <li><a href="toiawase.html">お問い合わせ</a></li>
-     </ul>
     </div>
-    <br class="clr">
-<!-- ======================= navi    end   ================= -->
-   </div>
-<!-- ======================= header  end   ================= -->
-   
-<!-- ======================= main     start ================= -->
-   <div id="main">
-    <div class="welcomediv">
-     <img class="titleimg" src="img/image005.png" alt="ゆたかゴルフ ">
+	</div>
+	<div class="row">
+    <div class="bottom_block">
+      <div class="col-1-2">
+        <h3>Follow Us</h3>
+        <div class="socials">
+          <a href="https://twitter.com/yutakagolf"></a>
+        </div>
+        <nav><ul>
+                   <li class="current"><a href="index.html">ホーム</a></li>
+                   <li ><a href="goannai.html">営業時間</a></li>
+                   <li><a href="grouplesson.html">レッスン</a></li>
+                   <li><a href="map.html">アクセスマップ</a></li>
+                   <li><a href="situmon.html">よくある質問</a></li>
+                   <li><a href="news.html">ニュース</a></li>
+                 </ul></nav>
+      </div>
+<!--
+      <div class="col-1-2">
+        <h3>Email Updates</h3>
+        <p class="col1">Join our digital mailing list and get news<br> deals and be first to know about events</p>
+        <form id="newsletter">
+         <div class="success">Your subscribe request has been sent!</div>
+         <label class="email">
+          <input type="email" value="Enter e-mail address" >
+          <a href="#" class="btn" data-type="submit">subscribe</a>
+          <span class="error">*This is not a valid email address.</span>
+         </label>
+        </form>
+      </div>
+-->
+      </div>
+	  </div>
     </div>
-<!-- ======================= news     start ================= -->
-    <div class="news">
-     <h2>最新イベント／キャンペーン情報</h2>
-     <dl>
-			<dt>2014.05.01 2014年5月ウイークデー倶楽部追加！</dt>
-			<dd><a href="20140501event.html">ウイークデー倶楽部！5月も日程追加！</a></dd>
-			<dt>2014.04.01 2014年4月ウイークデー倶楽部追加！</dt>
-			<dd><a href="20140401event.html">ウイークデー倶楽部！4月も日程追加！</a></dd>
-			<dt>2014.03.31 価格改定のお知らせ</dt>
-			<dd><a href="20140331event.html">消費税率変更に伴う価格改定のお知らせです</a></dd>
-			<dt>2014.01.23 ポイント2倍デーのご案内！</dt>
-			<dd><a href="20140123event.html">お得なポイント2倍デー！お見逃しなく〜！</a></dd>
-			<dt>2014.01.22 【期間限定】ウイークデー倶楽部全日ご利用可能！</dt>
-			<dd><a href="20140122event.html">日曜・祝日もご利用可能です。詳しくはこちら</a></dd>
-			<dt>2013.10.24 2013年11月ウイークデー倶楽部追加！</dt>
-			<dd><a href="20131101event.html">ウイークデー倶楽部！11月も日程を追加しました。</a></dd>
-			<dt>2013.10.01 2013年秋のキャンペーン！</dt>
-			<dd><a href="20131001event.html">来るほどお得になるスタンプカード発行中！</a></dd>
-			<dt>2013.9.30 2013年10月ウイークデー倶楽部追加！</dt>
-			<dd><a href="20130930event.html">ウイークデー倶楽部！10月も日程を追加しました。</a></dd>
-
-			<dt>2013.9.9 ウイークデー倶楽部対象日追加！</dt>
-			<dd><a href="20130909event.html">大好評をいただいております、ウイークデー倶楽部！今月は祝日も対象日となっております。</a></dd>
-      <dt>2013.9.2 ホームページリニューアル</dt>
-      <dd>
-       よりわかりやすくするためにリニューアルしました。これからもよろしくおねがいします。
-      </dd>
-     </dl>
-    </div>
-<!-- ======================= news     end   ================= -->
-    
-    <div class="sales">
-     <h2>おすすめ情報</h2>
-
-     <div class="sale">
-      <a href="goannai.html">
-      <h4>お得な回数券!</h4>
-      <img src="./img/kaisuken15.png" alt="回数券15枚7000円">
-      <span class="comment">
-       好評販売中！お求めはカウンターにて！
-      </span>
-      </a>
-     </div>
-
-     <div class="sale">
-      <a href="goannai.html">
-       <h4>ウイークデー倶楽部</h4>
-       <img src="./img/weekday.png">
-       <span class="comment">
-        1球あたり5.25円！これはお得です！
-       </span>
-      </a>
-     </div>
-
-     <div class="sale">
-      <a href="grouplesson.html">
-       <h4>グループレッスン！</h4>
-       <img src="./img/grouplesson_1.jpg" alt="グループレッスンの写真1">
-       <span class="comment">
-        初めてでも大丈夫！わかりやすく丁寧にご指導いたします。
-       </span>
-      </a>
-     </div>
-
-     <div class="clr"></div>
-    </div>
-   </div>
-<!-- ======================= main     end   ================= -->
-<div class="clr"></div>
-<!-- ======================= footer   start ================= -->
-   <div id="footer">
-    <ul>
-     <li>ホーム</li>
-     <li><a href="goannai.html">営業時間/料金</a></li>
-     <li><a href="grouplesson.html">グループレッスン</a></li>
-     <li><a href="map.html">アクセスマップ</a></li>
-     <li><a href="situmon.html">よくある質問</a></li>
-     <li><a href="toiawase.html">お問い合わせ</a></li>
-     <li><a href="policy.html">プライバシーポリシー</a></li>
-     <li><a href="sitepolicy.html">サイトポリシー</a></li>
-     <li><a href="link.html">リンク</a></li>
-    </ul>
-
-    <div class="clr"></div>
-   </div>
-<!-- ======================= footer   end  ================= -->
   </div>
-<!-- ======================= wrapper end   ================= -->
+</div>
+<!--==============================footer=================================-->
 
- </body>
+<footer>
+  <div class="zerogrid">
+    <div class="col-full">
+<!--
+		<div class="wrap-col">
+     Gourmet © 2013  &nbsp;&nbsp; |&nbsp;&nbsp;   <a href="#">Privacy Policy</a>    &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="http://www.zerotheme.com/" rel="nofollow">Html5 Templates</a> designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a> - <a href="http://www.zerotheme.com/" rel="nofollow">Zerotheme.com</a>
+	 	</div>
+-->
+		<div class="wrap-col">
+             ゆたかゴルフ © 2014  &nbsp;&nbsp; |&nbsp;&nbsp;   <a href="policy.html">プライバシーポリシー</a><a href="link.html">&nbsp;&nbsp; | &nbsp;&nbsp;リンク</a>
+	 	</div>
+
+    </div>
+  </div>
+</footer>
+</body>
 </html>
