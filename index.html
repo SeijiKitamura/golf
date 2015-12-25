@@ -85,6 +85,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
      <div class="col-lg-10 col-xs-12">
       <div class="page-header">
        <h2>Welcome</h2>
+       <h3 id="kyou"></h3>
       </div>
      </div>
     </div><!--div class="row"-->
@@ -168,7 +169,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
      <div class="col-lg-6 col-xs-12">
       <div class="bs-component">
         <h4 id="open">営業時間</h4>
-        <table class="table table-striped table-hover table-bordered">
+        <table id="eigyo" class="table table-striped table-hover table-bordered">
          <thead>
           <tr>
            <th>曜日</th>
@@ -178,48 +179,6 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           </tr>
          </thead>
          <tbody>
-          <tr>
-           <td>月</td>
-           <td>9:00-22:00</td>
-           <td>21:30</td>
-           <td></td>
-          </tr>
-          <tr>
-           <td>火</td>
-           <td>9:00-22:00</td>
-           <td>21:30</td>
-           <td></td>
-          </tr>
-          <tr>
-           <td>水</td>
-           <td>9:00-22:00</td>
-           <td>21:30</td>
-           <td></td>
-          </tr>
-          <tr>
-           <td>木</td>
-           <td>9:00-16:30</td>
-           <td>21:30</td>
-           <td>第1木曜日全休</td>
-          </tr>
-          <tr>
-           <td>金</td>
-           <td>9:00-22:00</td>
-           <td>21:30</td>
-           <td></td>
-          </tr>
-          <tr>
-           <td>土</td>
-           <td>9:00-22:00</td>
-           <td>21:30</td>
-           <td></td>
-          </tr>
-          <tr>
-           <td>日</td>
-           <td>9:00-22:00</td>
-           <td>21:30</td>
-           <td></td>
-          </tr>
          </tbody>
         </table>
       </div><!--div class="bs-component"-->
@@ -586,5 +545,79 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+  <script>
+$(function(){
+ $.ajax({
+  url     :"schedule.json",
+  type    :"GET",
+  datatype:"json",
+  cache   : false,
+  complete:function(){},
+  success :function(json){
+//   getOpenDay(json);
+   test(json);
+   getOpenDay(json);
+  },
+  error:function(XMLHttpRequest,textStatus,errorThrown){
+   console.log(XMLHttpRequest.responseText);
+  }
+ });
+});
+
+function test(json){
+ var youbi=["日","月","火","水","木","金","土"];
+ var t=new Date();//今日の日付
+ var j=[];
+ $("table#eigyo tbody").empty();
+ $.each(json,function(i,val){
+  var d=new Date(val.day);
+  if(t.getFullYear()==d.getFullYear() && t.getMonth()==d.getMonth()&&t.getDate()==d.getDate() ||
+     d.getTime()>t.getTime()
+    ){
+   var s=val.time.start;
+   if(! s.length){
+    s="休み";
+   }
+   $("<tr>").append($("<td>").text(val.day+"("+youbi[d.getDay()]+")"))
+            .append($("<td>").text(s))
+            .append($("<td>").text(val.time.end))
+            .append($("<td>").text(val.time.last))
+            .appendTo($("table#eigyo tbody"));
+  }
+
+ });
+ console.log(j);
+}
+
+function getOpenDay(json){
+ var t=new Date();//今日の日付
+ var a=new Date();//明日の日付
+ a.setDate(a.getDate()+1);
+ var h="";//今日の営業時間
+ var k="";//明日の営業時間
+ $.each(json,function(i,val){
+  var d=new Date(val.day);
+  if(t.getFullYear()==d.getFullYear() && t.getMonth()==d.getMonth()&&t.getDate()==d.getDate()){
+   if(val.time.start || val.time.end){
+    h="本日は"+val.time.end+"まで営業(最終受付"+val.time.last+")";
+   }
+   else{
+    h="本日はお休みです";
+   }
+  }
+
+  if(a.getFullYear()==d.getFullYear() && a.getMonth()==d.getMonth()&&a.getDate()==d.getDate()){
+   if(val.time.start || val.time.end){
+    k="明日は"+val.time.end+"まで営業(最終受付"+val.time.last+")";
+   }
+   else{
+    k="明日はお休みです";
+   }
+  }
+ });
+ console.log(h+k+"end");
+ $("h3#kyou").text(h+" "+k);
+}
+  </script>
  </body>
 </html>
